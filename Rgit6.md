@@ -1,4 +1,4 @@
-Rgit2
+PCA
 ================
 
 GitHub Documents
@@ -28,7 +28,7 @@ Including Plots
 
 You can also embed plots, for example:
 
-![](Rgit2_files/figure-markdown_github/pressure-1.png)
+![](Rgit6_files/figure-markdown_github/pressure-1.png)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
@@ -83,15 +83,13 @@ summary(heptathlon)
 boxplot(heptathlon)
 ```
 
-![](Rgit2_files/figure-markdown_github/unnamed-chunk-1-1.png)
+![](Rgit6_files/figure-markdown_github/unnamed-chunk-1-1.png)
 
 ``` r
 attach(heptathlon)
-
 hurdles = max(hurdles) - hurdles
 run200m = max(run200m) - run200m
-run800m = max(run800m) - run800m
-
+run800m = max(run800m) - run800m 
 
 library(stats)
 hep.data = heptathlon[,-8]
@@ -143,7 +141,7 @@ eig.val
 screeplot(hep.pca, type="lines")
 ```
 
-![](Rgit2_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](Rgit6_files/figure-markdown_github/unnamed-chunk-1-2.png)
 
 ``` r
 hep.pca$loadings[, 1:2]
@@ -193,4 +191,4 @@ hep.pca$scores[,1:2]
 biplot(hep.pca, cex=0.7)
 ```
 
-![](Rgit2_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](Rgit6_files/figure-markdown_github/unnamed-chunk-1-3.png)
